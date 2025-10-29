@@ -46,19 +46,21 @@ class _ChatScreenState extends State<ChatScreen> {
     String lowerCaseQuery = query.toLowerCase();
 
     if (lowerCaseQuery.contains("problem") || lowerCaseQuery.contains("pain point")) {
-      return "The core problem is that businesses struggle to maintain consistent SEO rankings due to constant algorithm changes and manual optimization. There’s no intelligent system that can predict ranking drops or automatically improve content in real time.";
+      return "The core problem is that businesses struggle to maintain consistent SEO rankings due to constant algorithm changes and manual optimization. Most existing SEO tools are static; they tell you what went wrong after your ranking drops, but they don’t predict or fix it. This leads to lost visibility, reduced traffic, and ultimately, lost revenue.";
     } else if (lowerCaseQuery.contains("solution") || lowerCaseQuery.contains("what is seo copilot") || lowerCaseQuery.contains("what does it do")) {
-      return "SEO Copilot is an AI-driven agent that continuously monitors SEO metrics, predicts ranking shifts, and autonomously suggests or implements improvements using Temporal Graph Neural Networks and Reinforcement Learning.";
+      return "SEO Copilot is an AI-driven system that continuously monitors SEO performance, predicts ranking changes before they happen, and autonomously optimizes your content. It uses advanced machine learning like Temporal Graph Neural Networks to forecast ranking drift and Reinforcement Learning to choose and apply the best optimization actions. It even explains its actions in simple human language using GPT models.";
     } else if (lowerCaseQuery.contains("architecture") || lowerCaseQuery.contains("how does it work")) {
-      return "The architecture has five layers: 1. Data Aggregation, 2. Knowledge Graph Construction, 3. A Predictive AI Engine (using TGNNs), 4. An Optimization Agent (using Reinforcement Learning), and 5. A Dashboard for visualization.";
+      return "The architecture has five layers:\n1. Data Aggregation: Gathers SEO data from Google Search Console, Play Store, and crawlers.\n2. Knowledge Graph Construction: Connects keywords, pages, and rankings to see relationships.\n3. Predictive AI Engine: Uses Temporal Graph Neural Networks (TGNNs) to forecast ranking drift.\n4. Optimization Agent: Uses Reinforcement Learning to automatically adjust meta tags, headings, and run A/B tests.\n5. Dashboard: Visualizes insights and recommendations.";
     } else if (lowerCaseQuery.contains("tech stack") || lowerCaseQuery.contains("technology")) {
-      return "The tech stack includes Python, BeautifulSoup, PyTorch Geometric, GPT API, NetworkX, MongoDB, Streamlit, Selenium, and Neo4j.";
+      return "The tech stack includes Python for development, PyTorch Geometric for TGNN modeling, GPT API for generating natural-language insights, Neo4j for the knowledge graph, and Streamlit for the interactive dashboard. It also uses Selenium and BeautifulSoup for data scraping.";
     } else if (lowerCaseQuery.contains("unique") || lowerCaseQuery.contains("differentiators")) {
-      return "What makes it unique is that it predicts ranking drift, automatically applies improvements via Reinforcement Learning, provides natural language explanations using LLMs, and unifies both Web and App SEO optimization.";
+      return "What makes SEO Copilot unique is that it doesn't just analyze—it acts autonomously. It combines Temporal Graph Neural Networks for prediction, Reinforcement Learning for decision-making, and LLMs for human-like explanations. It's like having a 24/7 autonomous SEO engineer.";
     } else if (lowerCaseQuery.contains("audience") || lowerCaseQuery.contains("who is it for")) {
-      return "The target audience includes digital marketers, app developers, e-commerce companies, and SEO agencies who need to automate and improve their SEO efforts.";
+      return "The target audience includes digital marketing agencies, app developers, e-commerce brands, and any business relying on online traffic. It helps them by automating tedious monitoring and testing, saving them time and turning SEO stress into SEO success.";
     } else if (lowerCaseQuery.contains("future") || lowerCaseQuery.contains("enhancements")) {
-      return "Future plans include a voice-based SEO assistant, a Chrome extension for instant analysis, and Google Ads ROI integration to create a complete AI marketing ecosystem.";
+      return "Future plans are to make SEO Copilot even smarter with a voice-based SEO assistant, a Chrome extension for on-page analysis, and integration with Google Ads ROI tracking. The vision is to create a complete, autonomous growth platform.";
+    } else if (lowerCaseQuery.contains("team") || lowerCaseQuery.contains("who made you")) {
+      return "I was created based on a project by Team Hack Titans.";
     } else if (lowerCaseQuery.contains("hello") || lowerCaseQuery.contains("hi")) {
       return "Hello! How can I help you with the SEO Copilot project today?";
     }
